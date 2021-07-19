@@ -89,7 +89,7 @@ img {
 
   /* Ridimensionamento dello schermo */
   .row {
-    width: 420px;
+    width: 100%;
     padding: 0 10px;
     margin: 0; 
   }
@@ -115,6 +115,10 @@ img {
     width: 100%;
     /* padding-top: 20px;
     padding-bottom: 10px; */
+  }
+  #lezioni .row>.right img {
+    width: 200px;
+    height: auto;
   }
   #lezioni {
     background-color: rgb(242, 242, 205);
