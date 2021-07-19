@@ -71,3 +71,81 @@ img {
 .clear {
   clear: both;
 }
+
+/* UTILIZZO DELLE MEDIA QUERIES */
+
+/* Responsive per uno schermo inferiore a 420px */
+@media screen and (max-width: 420px){
+  /* 
+    RESET 
+    Per eliminare i margini del body e permettere di aggiungere padding senza che 
+    i contenuti escano dallo schermo.
+  */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Ridimensionamento dello schermo */
+  .row {
+    width: 420px;
+    padding: 0 10px;
+    margin: 0; 
+  }
+
+  /* Dimensione del testo e distanziamento */
+  h1 {
+    padding-top: 20px;
+    font-size: 24px;
+  }  
+  .row > div {
+    font-size: 12px;
+    line-height: 12px ;
+  }
+  div > h3 {
+    font-size: 14.5px;
+    padding: 5px 0;
+  }
+
+  /* Adattamento delle righe contenti il codice per uno schermo mobile */
+  /* Sezione Lezioni */
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 100%;
+    /* padding-top: 20px;
+    padding-bottom: 10px; */
+  }
+  #lezioni {
+    background-color: rgb(242, 242, 205);
+  }
+
+  /* Sezione Steps */
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: 100%;
+    /* padding-top: 20px;
+    padding-bottom: 10px; */
+  }
+
+  /* Sezione Why */
+  #why {
+    background-color: rgb(242, 242, 205);
+  }
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin: 0;
+    /* padding-top: 20px;
+    padding-bottom: 10px; */
+  }
+
+  /* Per creare un distanziamento tra le righe possiamo utilizzare una selezione
+  sui div figli diretti di una row, visto che la regola si ripete per ogni sezione */
+  .row > div {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  
+}
