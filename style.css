@@ -153,3 +153,72 @@ img {
   }
   
 }
+
+/* Responsive per uno schermo compreso tra 420px e 768px */
+@media screen and (min-width: 421px) and (max-width: 768px){
+  /* 
+    RESET 
+    Per eliminare i margini del body e permettere di aggiungere padding senza che 
+    i contenuti escano dallo schermo.
+  */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Ridimensionamento pagina */
+  .row {
+    width: 100%;  
+    background-color: turquoise;
+    padding: 0 20px;
+    margin: 0;
+  }
+  h1 {
+    font-size: 3em;
+    padding-bottom: 20px;
+  }
+  h3 {
+    padding: 20px 0 10px;
+  }
+  .row > div {
+    width: 100%;
+    font-size: 1.5em;
+    padding-bottom: 50px;
+  }  
+/* 
+  .row > div::after {
+    content: '';
+    display: table;
+    clear: both;
+  } */
+  
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 100%;
+  }
+  /* Sezione degli step */
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: 100%;
+    
+  }
+  #steps .row img {    
+    float: left;
+  }
+
+  /* Sezione del Why */
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 100%;
+    margin-top: 0;
+  }
+  #why .row img {    
+    float: left;
+  }
+  #why .row hr{
+    clear: left;
+  }
+}
