@@ -170,53 +170,60 @@ img {
   /* Ridimensionamento pagina */
   .row {
     width: 100%;  
-    background-color: turquoise;
     padding: 0 20px;
     margin: 0;
   }
   h1 {
     font-size: 3em;
-    padding-bottom: 20px;
-  }
-  h3 {
-    padding: 20px 0 10px;
+    padding: 20px 0;
   }
   .row > div {
     width: 100%;
     font-size: 1.5em;
     padding-bottom: 50px;
-  }  
+  }
 /* 
   .row > div::after {
     content: '';
     display: table;
     clear: both;
   } */
-  
+
+  /* Sezione lezioni */
+  #lezioni {
+    background-color: rgb(242, 242, 205);
+  }
   #lezioni .row>.left,
   #lezioni .row>.right {
     width: 100%;
   }
+
   /* Sezione degli step */
   #steps .row>.left,
   #steps .row>.central,
   #steps .row>.right {
     width: 100%;
-    
+    text-align: left;    
   }
   #steps .row img {    
     float: left;
+    margin-right: 30px;
   }
 
   /* Sezione del Why */
+  #why {
+    background-color: rgb(242, 242, 205);  
+  }
   #why .row>.first,
   #why .row>.second,
   #why .row>.third {
     width: 100%;
     margin-top: 0;
+    text-align: left;
   }
   #why .row img {    
     float: left;
+    margin-right: 30px;
   }
   #why .row hr{
     clear: left;
